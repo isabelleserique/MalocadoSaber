@@ -61,24 +61,36 @@
         <div class="form-wrapper">
           <h1 class="form-header">Cadastro Aluno</h1>
           <div class="form-block w-form">
+            
             <form id="wf-form-signup" name="wf-form-signup" data-name="signup" method="get" data-ms-form="signup">
-              <div class="input-wrapper"><input type="text" class="input w-input" maxlength="256" name="nome"
-                  data-name="nome" placeholder="nome completo" id="nome-2" data-ms-member="email" required="" /></div>
+
+              <div class="input-wrapper">
+                <input type="text" class="input w-input" maxlength="256" name="nome"
+                  data-name="nome" placeholder="nome completo" id="nome-2" data-ms-member="nome" required="" />
+                </div>
+
               <div class="input-wrapper"><input type="text" class="input w-input" maxlength="256" name="datanascimento"
-                  data-name="datanascimento" placeholder="data de nascimento" id="datanascimento-2"
-                  data-ms-member="email" required="" /></div><select id="sexo" name="sexo" data-name="sexo" required=""
+                  data-name="nascimento" placeholder="data de nascimento" id="datanascimento-2"
+                  data-ms-member="nascimento" required="" />
+                </div>
+
+                <select id="sexo" name="sexo" data-name="sexo" data-ms-member="sexo" required=""
                 class="select-field w-select">
                 <option value="">sexo</option>
                 <option value="">feminino</option>
                 <option value="">masculino</option>
                 <option value="">outro</option>
-              </select><select id="residencia-2" name="residencia" data-name="residencia" required=""
+              </select>
+              
+              <select id="residencia-2" name="residencia" data-name="residencia" data-ms-member="residencia"  required=""
                 class="select-field w-select">
                 <option value="">resido em</option>
                 <option value="">cidade</option>
                 <option value="">aldeia</option>
                 <option value="">vilarejo</option>
-              </select><select id="materias" name="materias" data-name="materias" required=""
+              </select>
+              
+              <select id="materias" name="materias" data-name="materias" data-ms-member="materia" required=""
                 class="select-field w-select">
                 <option value="">matéria que sinto dificuldade</option>
                 <option value="">biologia</option>
@@ -92,6 +104,7 @@
                 <option value="">química</option>
                 <option value="">redação</option>
               </select>
+
               <div class="input-wrapper"><input type="email" class="input w-input" maxlength="256" name="Emal"
                   data-name="Emal" placeholder="abcd@efgh.com" id="Emal" data-ms-member="email" required="" /></div>
               <input type="password" class="input trigger w-input" maxlength="256" name="password" data-name="password"
